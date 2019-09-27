@@ -8,7 +8,7 @@
    <!-- Шапка -->
    <header class="main-header">
       <nav class="container">
-         <img src="img/index-logo.svg" width="371" height="155" alt="Логотип Барбершопа Бородинский">
+         <img class="main-logo" src="img/index-logo.svg" width="371" height="155" alt="Логотип Барбершопа Бородинский">
          <ul class="nav-list">
              <li class="nav-item"><a href="#">Информация</a></li>
              <li class="nav-item"><a href="#">Новости</a></li>
@@ -17,13 +17,19 @@
              <li class="nav-item"><a href="#">Контакты</a></li>
          </ul>
          <ul class="login">
-             <li class="login-item"><a href="#">Вход</a></li>
+             <li class="login-item"><button>Вход</button></li>
          </ul>
       </nav>
    </header>
+
    <!-- Преимущества -->
+
    <main class="container">
+
+       <h1 class="visually-hidden">Барбершоп Бородинский</h1>
+
        <section class="features">
+          <h2 class="visually-hidden">Преимущества</h2>
            <ul class="features-list">
                <li class="features-item">
                    <h3>Быстро</h3>
@@ -31,9 +37,7 @@
                </li>
                <li class="features-item">
                    <h3>Круто</h3>
-                   <p>ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ.
-МЫ СДЕЛАЕМ ИЗ ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО!
-ВО ВСЯКОМ СЛУЧАЕ ВНЕШНЕ.</p>
+                   <p>ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ. МЫ СДЕЛАЕМ ИЗ ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО! ВО ВСЯКОМ СЛУЧАЕ ВНЕШНЕ.</p>
                </li>
                <li class="features-item">
                    <h3>Дорого</h3>
@@ -41,10 +45,12 @@
                </li>
            </ul>
        </section>
-   <!-- Основа -->
+
+   <!-- Контент -->
+
        <section class="content">
            <div class="news">
-               <h2>НОВОСТИ</h2>
+               <h2 class="heading-content">НОВОСТИ</h2>
                <ul class="news-list">
                    <li class="news-item">
                        <p>НАМ НАКОНЕЦ ЗАВЕЗЛИ ЯГЕРМАЙСТЕР! ТЕПЕРЬ ВЫ МОЖЕТЕ ПРОПУСТИТЬ СТАКАНЧИК ВО ВРЕМЯ СТРИЖКИ</p>
@@ -55,52 +61,79 @@
                        <time datetime="2019-01-18">18 января</time>
                    </li>
                </ul>
-               <a href="#">ВСЕ НОВОСТИ</a>
+               <a class="button" href="#">ВСЕ НОВОСТИ</a>
            </div>
 
            <div class="gallery">
-               <h2>ФОТОГАЛЕРЕЯ</h2>
+               <h2 class="heading-content">ФОТОГАЛЕРЕЯ</h2>
                <figure class="gallery-content">
-               <a href=""><img src="img/studio.jpg" width="286" height="164" alt="Интерьер"></a>
+               <a href="#"><img src="img/studio.jpg" width="286" height="164" alt="Интерьер"></a>
                </figure>
-               <span class="button button-gallery button-gallery-back">НАЗАД</span>
-               <span class="button button-gallery button-gallery-next">ВПЕРЕД</span>
+               <button class="button button-gallery button-gallery-back">НАЗАД</button>
+               <button class="button button-gallery button-gallery-next">ВПЕРЕД</button>
            </div>
        </section>
 
        <section class="content">
            <div class="contants">
-               <h2>КОНТАКТНАЯ ИНФОРМАЦИЯ</h2>
-               <p class="contacts-info">БАРБЕРШОП «БОРОДИНСКИЙ»<br>
-АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8<br>
-ТЕЛЕФОН: +7 (495) 666-02-66</p>
-               <p class="contacts-info">ВРЕМЯ РАБОТЫ:<br>
-ПН—ПТ: С 10:00 ДО 22:00<br>
-СБ—ВС: С 10:00 ДО 19:00</p>
+               <h2 class="heading-content">КОНТАКТНАЯ ИНФОРМАЦИЯ</h2>
+               <p class="contacts-info">
+               БАРБЕРШОП «БОРОДИНСКИЙ»<br>
+               АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8<br>
+               ТЕЛЕФОН: +7 (495) 666-02-66
+               </p>
+               <p class="contacts-info">
+               ВРЕМЯ РАБОТЫ:<br>
+               ПН—ПТ: С 10:00 ДО 22:00<br>
+               СБ—ВС: С 10:00 ДО 19:00
+               </p>
                <a class="button" href="#">КАК ПРОЕХАТЬ</a>
                <a class="button" href="#">ОБРАТНАЯ СВЯЗЬ</a>
            </div>
 
            <div class="sign-up">
-               <h2>ЗАПИСАТЬСЯ</h2>
+               <h2 class="heading-content">ЗАПИСАТЬСЯ</h2>
                <p class="sign-up-info">УКАЖИТЕ ЖЕЛАЕМУЮ ДАТУ И ВРЕМЯ И МЫ СВЯЖЕМСЯ С ВАМИ ДЛЯ ПОДТВЕРЖДЕНИЯ БРОНИ</p>
+               <form class="sign-up-form" action="https://echo.htmlacademy.ru" method="post">
+                  <p class="sign-up-item">
+                      <label for="sign-up-date">Дата</label>
+                      <input type="text" name="date" id="sign-up-date" placeholder="08.10.2017">
+                  </p>
+                  <p class="sign-up-item">
+                      <label for="sign-up-time">Время</label>
+                      <input type="text" name="time" id="sign-up-time" placeholder="10:00">
+                  </p>
+                  <p class="sign-up-item">
+                      <label for="sign-up-name">Ваше имя</label>
+                      <input type="text" name="name" id="sign-up-name" placeholder="Борода">
+                  </p>
+                  <p class="sign-up-item">
+                      <label for="sign-up-phone">Телефон</label>
+                      <input type="tel" name="phone" id="sign-up-phone" placeholder="+7 123 456-78-90">
+                  </p>
+                  <button class="button" type="submit">Отправить</button>
+               </form>
            </div>
        </section>
    </main>
+
    <!-- Подвал -->
+
    <footer class="main-footer">
        <section class="container">
            <div class="footer-copyright">
-               <p class="copyright-info">БАРБЕРШОП «БОРОДИНСКИЙ»<br>
-АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8<br>
-<a href="#">КАК НАС НАЙТИ?</a><br>
-ТЕЛЕФОН: +7 (495) 666-02-66</p>
+               <p class="copyright-info">
+               БАРБЕРШОП «БОРОДИНСКИЙ»<br>
+               АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8<br>
+               <a href="#">КАК НАС НАЙТИ?</a><br>
+               ТЕЛЕФОН: +7 (495) 666-02-66
+               </p>
            </div>
            <div class="footer-social">
                <b>ДАВАЙТЕ ДРУЖИТЬ!</b>
-               <a class="social-button" href="">Вконтакте</a>
-               <a class="social-button" href="">Фейсбук</a>
-               <a class="social-button" href="">Инстаграм</a>
+               <a class="social-button" href="#" aria-label="Вконтакте"></a>
+               <a class="social-button" href="#" aria-label="Фейсбук"></a>
+               <a class="social-button" href="#" aria-label="Инстаграм"></a>
            </div>
            <div class="footer-autors">
                <b>РАЗРАБОТАНО:</b>
