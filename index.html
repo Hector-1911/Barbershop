@@ -17,7 +17,7 @@
              <li class="nav-item"><a href="#">Контакты</a></li>
          </ul>
          <ul class="login">
-             <li class="login-item"><button>Вход</button></li>
+             <li class="login-item"><button class="login-button-header" type="button">Вход</button></li>
          </ul>
       </nav>
    </header>
@@ -69,8 +69,8 @@
                <figure class="gallery-content">
                <a href="#"><img src="img/studio.jpg" width="286" height="164" alt="Интерьер"></a>
                </figure>
-               <button class="button button-gallery button-gallery-back">НАЗАД</button>
-               <button class="button button-gallery button-gallery-next">ВПЕРЕД</button>
+               <button class="button button-gallery button-gallery-back" type="button">НАЗАД</button>
+               <button class="button button-gallery button-gallery-next" type="button">ВПЕРЕД</button>
            </div>
        </section>
 
@@ -141,5 +141,37 @@
            </div>
        </section>
    </footer>
+
+   <!-- Модальные окна -->
+
+   <section class="modal modal-login">
+       <h2 class="heading-content">ЛИЧНЫЙ КАБИНЕТ</h2>
+       <p class="modal-info">Введите пожалуйста свой логин и пароль</p>
+       <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="login-form-item">
+             <label aria-label="Логин">
+                 <input class="form-item-icon" type="text" name="login" placeholder="ЛОГИН">
+             </label>
+          </p>
+          <p class="login-form-item">
+             <label aria-label="ПАРОЛЬ">
+                 <input class="form-item-icon" type="password" name="password" placeholder="ПАРОЛЬ">
+             </label>
+          </p>
+          <p class="login-form-item">
+             <input class="visually-hidden" type="checkbox" name="save-user" id="login-save-user">
+             <label class="save-user-icon" for="login-save-user">ЗАПОМНИТЕ МЕНЯ</label>
+             <a class="login-restore-pass" href="#">Я ЗАБЫЛ ПАРОЛЬ!</a>
+          </p>
+          <button class="form-login-button" type="submit">ВОЙТИ</button>
+       </form>
+       <button class="button-close" aria-label="Закрыть Окно" type="button"></button>
+   </section>
+
+   <section class="modal-map">
+       <h2 class="visually-hidden">Как до нас добраться</h2>
+       <img src="img/map.jpg" width="766" height="560" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+       <button class="button-close" aria-label="Закрыть Окно" type="button"></button>
+   </section>
 </body>
 </html>
