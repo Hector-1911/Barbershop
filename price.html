@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Барбершоп Бородинский</title>
+</head>
+<body style="background-color: darkseagreen">
+
+   <!-- Шапка -->
+
+   <header class="main-header">
+      <nav class="container">
+         <img class="main-logo" src="img/logo.svg" width="111" height="24" alt="Логотип Барбершопа Бородинский">
+         <ul class="nav-list">
+             <li class="nav-item"><a href="#">Информация</a></li>
+             <li class="nav-item"><a href="#">Новости</a></li>
+             <li class="nav-item"><a href="#">Прайс-лист</a></li>
+             <li class="nav-item"><a href="#">Магазин</a></li>
+             <li class="nav-item"><a href="#">Контакты</a></li>
+         </ul>
+         <ul class="login">
+             <li class="login-item"><button class="login-button-header" type="button">Вход</button></li>
+         </ul>
+      </nav>
+   </header>
+
+   <!-- Контент -->
+
+   <main class="container">
+       <h2 class="page-title">ПРАЙС-ЛИСТ</h2>
+       <ul class="breadcrumbs">
+           <li class="breadcrumbs-item">
+               <a href="#">ГЛАВНАЯ</a>
+           </li>
+           <li class="breadcrumbs-item breadcrumbs-current">ПРАЙС-ЛИСТ</li>
+       </ul>
+       <section class="masters-container">
+           <h1 class="masters-title">ИСТИННО МУЖСКАЯ КЛАССИКА</h1>
+           <div class="about-us">
+               <section class="what-we-use">
+                   <h2 class="what-we-use-title">МЫ ИСПОЛЬЗУЕМ ТОЛЬКО ЛУЧШИЕ СРЕДСТВА:</h2>
+                   <ul class="what-we-use-list">
+                       <li class="what-we-use-item">Baxter of California</li>
+                       <li class="what-we-use-item">Mr Natty</li>
+                       <li class="what-we-use-item">Suavecito</li>
+                       <li class="what-we-use-item">Malin+Goetz</li>
+                   </ul>
+               </section>
+               <section class="about-us-info">
+                   <h2 class="about-us-info-title">НЕСКОЛЬКО СЛОВ О НАС:</h2>
+                   <p class="about-us-info-text">Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.</p>
+               </section>
+           </div>
+
+           <section class="masters-price">
+               <h2 class="masters-price-title">ЦЕНЫ НА УСЛУГИ НАШИХ МАСТЕРОВ:</h2>
+               <table class="masters-price-table">
+                  <tr class="price-row">
+                      <td class="price-cell">СТРИЖКА</td>
+                      <td class="price-cell">1500 ₽</td>
+                  </tr>
+                  <tr class="price-row">
+                      <td class="price-cell">СТРИЖКА БОРОДЫ</td>
+                      <td class="price-cell">500 ₽</td>
+                  </tr>
+                  <tr class="price-row">
+                      <td class="price-cell">НАКРУТКА УСОВ</td>
+                      <td class="price-cell">350 ₽</td>
+                  </tr>
+               </table>
+               <p class="masters-price-info">
+               Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!
+               </p>
+           </section>
+       </section>
+   </main>
+
+   <!-- Подвал -->
+
+   <footer class="main-footer">
+       <div class="container">
+           <div class="footer-copyright">
+               <p class="copyright-info">
+               БАРБЕРШОП «БОРОДИНСКИЙ»<br>
+               АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8<br>
+               <a href="#">КАК НАС НАЙТИ?</a><br>
+               ТЕЛЕФОН: +7 (495) 666-02-66
+               </p>
+           </div>
+           <div class="footer-social">
+               <b>ДАВАЙТЕ ДРУЖИТЬ!</b>
+               <a class="social-button" href="#" aria-label="Вконтакте"></a>
+               <a class="social-button" href="#" aria-label="Фейсбук"></a>
+               <a class="social-button" href="#" aria-label="Инстаграм"></a>
+           </div>
+           <div class="footer-autors">
+               <b>РАЗРАБОТАНО:</b>
+               <a class="button" href="#">HTML ACADEMY</a>
+           </div>
+       </div>
+   </footer>
+
+   <!-- Модальные окна -->
+
+   <section class="modal modal-login">
+       <h2 class="heading-content">ЛИЧНЫЙ КАБИНЕТ</h2>
+       <p class="modal-info">Введите пожалуйста свой логин и пароль</p>
+       <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="login-form-item">
+             <label aria-label="Логин">
+                 <input class="form-item-icon" type="text" name="login" placeholder="ЛОГИН">
+             </label>
+          </p>
+          <p class="login-form-item">
+             <label aria-label="ПАРОЛЬ">
+                 <input class="form-item-icon" type="password" name="password" placeholder="ПАРОЛЬ">
+             </label>
+          </p>
+          <p class="login-form-item">
+             <input class="visually-hidden" type="checkbox" name="save-user" id="login-save-user">
+             <label class="save-user-icon" for="login-save-user">ЗАПОМНИТЕ МЕНЯ</label>
+             <a class="login-restore-pass" href="#">Я ЗАБЫЛ ПАРОЛЬ!</a>
+          </p>
+          <button class="form-login-button" type="submit">ВОЙТИ</button>
+       </form>
+       <button class="button-close" aria-label="Закрыть Окно" type="button"></button>
+   </section>
+</body>
+</html>
