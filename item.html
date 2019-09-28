@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Барбершоп Бородинский</title>
+</head>
+<body style="background-color: darkseagreen">
+
+   <!-- Шапка -->
+
+   <header class="main-header">
+      <nav class="container">
+         <img class="main-logo" src="img/logo.svg" width="111" height="24" alt="Логотип Барбершопа Бородинский">
+         <ul class="nav-list">
+             <li class="nav-item"><a href="#">Информация</a></li>
+             <li class="nav-item"><a href="#">Новости</a></li>
+             <li class="nav-item"><a href="#">Прайс-лист</a></li>
+             <li class="nav-item"><a href="#">Магазин</a></li>
+             <li class="nav-item"><a href="#">Контакты</a></li>
+         </ul>
+         <ul class="login">
+             <li class="login-item"><button class="login-button-header" type="button">Вход</button></li>
+         </ul>
+      </nav>
+   </header>
+
+   <!-- Контент -->
+
+   <main class="container">
+      <h1 class="page-title">набор для путешествий «Baxter of California»</h1>
+       <ul class="breadcrumbs">
+           <li class="breadcrumbs-item">
+               <a href="#">ГЛАВНАЯ</a>
+           </li>
+           <li class="breadcrumbs-item">
+               <a href="#">МАГАЗИН</a>
+           </li>
+           <li class="breadcrumbs-item">
+               <a href="#">СРЕДСТВА ДЛЯ УХОДА</a>
+           </li>
+           <li class="breadcrumbs-item breadcrumbs-current">набор для путешествий «Baxter of California»</li>
+       </ul>
+
+       <div class="product-content">
+           <ul class="product-image">
+               <li class="product-image-item-big">
+                   <img src="img/item-big.jpg" width="460" height="498" alt="набор для путешествий «Baxter of California»">
+               </li>
+               <li class="product-image-item">
+                   <img src="img/item-small-1.jpg" width="140" height="149" alt="набор для путешествий «Baxter of California»">
+               </li>
+               <li class="product-image-item">
+                   <img src="img/item-small-2.jpg" width="140" height="149" alt="набор для путешествий «Baxter of California»">
+               </li>
+               <li class="product-image-item">
+                   <img src="img/item-small-3.jpg" width="140" height="149" alt="набор для путешествий «Baxter of California»">
+               </li>
+           </ul>
+       </div>
+       <div class="product-info-container">
+           <div class="product-info">
+               <b class="product-available">ЕСТЬ В НАЛИЧИИ</b>
+               <span class="product-article">Артикул: dexter-ae</span>
+               <p class="product-info-text">
+                   Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.
+               </p>
+               <p class="catalog-item-price-container">
+                    <b class="catalog-item-price">2 900 ₽</b>
+                    <a class="catalog-item-button" href="#">КУПИТЬ</a>
+               </p>
+           </div>
+           <section class="product-equip">
+               <h2 class="product-equip-title">В набор входят:</h2>
+               <ul class="product-equip-list">
+                   <li class="product-equip-item">Средство для умывания (50 мл)</li>
+                   <li class="product-equip-item">Увлажняющий крем (50 мл)</li>
+                   <li class="product-equip-item">Крем для бритья (50 мл)</li>
+                   <li class="product-equip-item">Крем после бритья, шампунь (50 мл)</li>
+                   <li class="product-equip-item">Удобная кожаная косметичка</li>
+               </ul>
+           </section>
+       </div>
+   </main>
+
+   <!-- Подвал -->
+
+   <footer class="main-footer">
+       <div class="container">
+           <div class="footer-copyright">
+               <p class="copyright-info">
+               БАРБЕРШОП «БОРОДИНСКИЙ»<br>
+               АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8<br>
+               <a href="#">КАК НАС НАЙТИ?</a><br>
+               ТЕЛЕФОН: +7 (495) 666-02-66
+               </p>
+           </div>
+           <div class="footer-social">
+               <b>ДАВАЙТЕ ДРУЖИТЬ!</b>
+               <a class="social-button" href="#" aria-label="Вконтакте"></a>
+               <a class="social-button" href="#" aria-label="Фейсбук"></a>
+               <a class="social-button" href="#" aria-label="Инстаграм"></a>
+           </div>
+           <div class="footer-autors">
+               <b>РАЗРАБОТАНО:</b>
+               <a class="button" href="#">HTML ACADEMY</a>
+           </div>
+       </div>
+   </footer>
+
+   <!-- Модальные окна -->
+
+   <section class="modal modal-login">
+       <h2 class="heading-content">ЛИЧНЫЙ КАБИНЕТ</h2>
+       <p class="modal-info">Введите пожалуйста свой логин и пароль</p>
+       <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="login-form-item">
+             <label aria-label="Логин">
+                 <input class="form-item-icon" type="text" name="login" placeholder="ЛОГИН">
+             </label>
+          </p>
+          <p class="login-form-item">
+             <label aria-label="ПАРОЛЬ">
+                 <input class="form-item-icon" type="password" name="password" placeholder="ПАРОЛЬ">
+             </label>
+          </p>
+          <p class="login-form-item">
+             <input class="visually-hidden" type="checkbox" name="save-user" id="login-save-user">
+             <label class="save-user-icon" for="login-save-user">ЗАПОМНИТЕ МЕНЯ</label>
+             <a class="login-restore-pass" href="#">Я ЗАБЫЛ ПАРОЛЬ!</a>
+          </p>
+          <button class="form-login-button" type="submit">ВОЙТИ</button>
+       </form>
+       <button class="button-close" aria-label="Закрыть Окно" type="button"></button>
+   </section>
+</body>
+</html>
