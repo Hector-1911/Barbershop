@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Барбершоп Бородинский</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body style="background-color: darkseagreen">
+<body>
 
    <!-- Шапка -->
 
    <header class="main-header">
-      <nav class="container">
+      <nav class="main-navigation">
          <img class="main-logo" src="img/index-logo.svg" width="371" height="155" alt="Логотип Барбершопа Бородинский">
          <ul class="nav-list">
              <li class="nav-item"><a href="#">Информация</a></li>
@@ -18,7 +21,7 @@
              <li class="nav-item"><a href="shop.html">Магазин</a></li>
              <li class="nav-item"><a href="#">Контакты</a></li>
          </ul>
-         <ul class="login">
+         <ul class="nav-login">
              <li class="login-item"><button class="login-button-header" type="button">Вход</button></li>
          </ul>
       </nav>
@@ -48,7 +51,7 @@
 
    <!-- Контент -->
 
-       <div class="content">
+       <div class="content-container">
            <section class="news">
                <h2 class="heading-content">НОВОСТИ</h2>
                <ul class="news-list">
@@ -74,7 +77,7 @@
            </section>
        </div>
 
-       <div class="content">
+       <div class="content-container">
            <section class="contants">
                <h2 class="heading-content">КОНТАКТНАЯ ИНФОРМАЦИЯ</h2>
                <p class="contacts-info">
@@ -160,10 +163,10 @@
           </p>
           <p class="login-form-item">
              <input class="visually-hidden" type="checkbox" name="save-user" id="login-save-user">
-             <label class="save-user-icon" for="login-save-user">ЗАПОМНИТЕ МЕНЯ</label>
+             <label class="login-checkbox" for="login-save-user">ЗАПОМНИТЕ МЕНЯ</label>
              <a class="login-restore-pass" href="#">Я ЗАБЫЛ ПАРОЛЬ!</a>
           </p>
-          <button class="form-login-button" type="submit">ВОЙТИ</button>
+          <button class="button" type="submit">ВОЙТИ</button>
        </form>
        <button class="button-close" aria-label="Закрыть Окно" type="button"></button>
    </section>

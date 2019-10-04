@@ -1,0 +1,208 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'PT Sans Narrow', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+
+    background-image: url(img/background-main.jpg);
+    background-color: #000000;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+a {
+    text-decoration: none;
+}
+
+.button {
+    font: inherit;
+
+    color: #ffffff;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+
+    background-color: #000000;
+    border: none;
+}
+
+.button:active,
+.button:focus,
+.button:hover {
+    background-color: #663d15;
+}
+
+
+/* Шапка */
+
+.main-navigation {
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+
+    background-color: #000000;
+}
+
+.nav-list,
+.nav-login {
+    list-style: none;
+}
+
+.nav-list a,
+.nav-login a {
+    color: #ffffff;
+}
+
+.nav-list a:hover,
+.nav-list a:focus,
+.nav-login a:hover,
+.nav-login a:focus {
+    background-color: #242424;
+}
+
+/* Преимущества */
+
+.features-list {
+    list-style: none;
+}
+
+.features-item {
+    text-align: center;
+}
+
+.features-item h3 {
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.content-container {
+    color: #000000;
+
+    background-color: #f8f5f2;
+    background-image: url(img/background-fon-repeat.jpg);
+    background-position: 0 0;
+    background-repeat: repeat;
+}
+
+.content-container h2 {
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.news-list {
+    list-style: none;
+}
+
+.news-item time {
+    text-transform: none;
+}
+
+.gallery-content {
+    border: 7px solid #ffffff;
+    background-color: #cccccc;
+}
+
+.sign-up-item input {
+    font: inherit;
+
+    background-color: transparent;
+    border: 2px solid #000000;
+}
+
+.sign-up-item input:focus {
+    border: 2px solid #663d15;
+}
+
+/* Подвал */
+
+.main-footer {
+    color: #ffffff;
+
+    background-color: #212121;
+    background-image: url(img/background-footer-repeat.jpg);
+    background-position: 0 0;
+    background-repeat: repeat;
+}
+
+.copyright-info a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.copyright-info a:hover,
+.copyright-info a:focus {
+    text-decoration: none;
+}
+
+.footer-social {
+    text-align: center;
+}
+
+.footer-autors {
+    text-align: center;
+}
+
+.footer-autors .button:hover,
+.footer-autors .button:focus {
+    color: #000000;
+
+    background-color: #ffffff;
+}
+
+/* Модальные окна */
+
+.modal {
+    color: #000000;
+
+    background-color: #f8f3f0;
+    background-image: url(img/background-fon-repeat.jpg);
+    background-position: 0 0;
+    background-repeat: repeat;
+}
+
+.modal h2 {
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.login-form-item input[type="text"],
+.login-form-item input[type="password"] {
+    font: inherit;
+
+    color: #000000;
+    text-transform: uppercase;
+
+    background-color: transparent;
+    border: 2px solid #000000;
+
+}
+
+.login-form-item input:focus {
+    border-color: #663b15;
+}
+
+.login-checkbox:hover,
+.login-checkbox:focus {
+    color: #663b15;
+}
+
+.login-form-item a {
+    color: #000000;
+    text-decoration: underline;
+}
+
+.login-form-item a:hover,
+.login-form-item a:focus {
+    text-decoration: none;
+}
+
+
+
+
+
+
