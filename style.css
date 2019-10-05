@@ -155,6 +155,14 @@ a {
     list-style: none;
 }
 
+.product-image li {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.product-image li:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
 .product-article {
     color: #aba9a7;
 }
@@ -220,17 +228,20 @@ a {
     line-height: 30px;
 }
 
-.filter-form label {
-    line-height: 18px;
+.filter-list input:hover + label,
+.filter-list input:focus + label {
+    color: #663d15;
 }
 
-.filter-form label:hover,
-.filter-form label:focus {
-    color: #663d15;
+.filter-list input:disabled + label {
+    color: #000000;
+
+    opacity: 0.5;
 }
 
 .filter-form .filter-list {
     list-style: none;
+    line-height: 18px;
 }
 
 .catalog-list {
@@ -240,7 +251,12 @@ a {
 .catalog-item {
     color: #000000;
 
-    background-color: #ffffff;
+    background-color: #f8f8f8;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.catalog-item:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .catalog-item-category {
@@ -258,15 +274,17 @@ a {
     line-height: 18px;
 }
 
-.catalog-item-title:hover,
-.catalog-item-title:focus,
-.catalog-item-category:hover,
-.catalog-item-category:focus {
-    color: #663d15;
+.catalog-item h3 {
+    color: #000000;
 }
 
 .pagination-list {
     list-style: none;
+}
+
+.catalog-item-price-container .button {
+  line-height: 20px;
+  color: #ffffff;
 }
 
 .btn-current {
