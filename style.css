@@ -15,6 +15,15 @@ body {
     background-repeat: no-repeat;
 }
 
+.item-page {
+    color: #000000;
+
+    background-color: #f3f0ed;
+    background-image: url(img/background-fon-repeat.jpg);
+    background-position: top center;
+    background-repeat: repeat;
+}
+
 a {
     text-decoration: none;
 }
@@ -116,6 +125,157 @@ a {
 
 .sign-up-item input:focus {
     border: 2px solid #663d15;
+}
+
+/* Товар */
+
+.page-title {
+    font-size: 30px;
+    line-height: 42px;
+}
+
+.breadcrumbs {
+    list-style: none;
+}
+
+.breadcrumbs-item a {
+    color: #000000;
+}
+
+.breadcrumbs-item a:hover,
+.breadcrumbs-item a:focus {
+    color: #663d15;
+}
+
+.breadcrumbs-current {
+    color: #aba9a7;
+}
+
+.product-image {
+    list-style: none;
+}
+
+.product-article {
+    color: #aba9a7;
+}
+
+.item-price {
+    color: #000000;
+
+    background-color: #e5e5e5;
+
+    text-align: center;
+    vertical-align: middle;
+}
+
+.product-equip h2 {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.product-equip-list {
+    list-style: none;
+}
+
+/* Страница Цены */
+
+.services-title {
+    font-size: 48px;
+    line-height: 48px;
+}
+
+.services-container h2 {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.what-we-use-list {
+    list-style: none;
+}
+
+.services-price-table {
+    border-collapse: collapse;
+}
+
+.services-price-table td {
+    border: 2px solid #000000;
+}
+
+.services-price-table .cell-text {
+    text-align: left;
+}
+
+.services-price-table .cell-price {
+    text-align: center;
+}
+
+/* Магазин */
+
+.filter-form fieldset {
+    border: none;
+}
+
+.filter-form legend {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.filter-form label {
+    line-height: 18px;
+}
+
+.filter-form label:hover,
+.filter-form label:focus {
+    color: #663d15;
+}
+
+.filter-form .filter-list {
+    list-style: none;
+}
+
+.catalog-list {
+    list-style: none;
+}
+
+.catalog-item {
+    color: #000000;
+
+    background-color: #ffffff;
+}
+
+.catalog-item-category {
+    color: #000000;
+
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: none;
+}
+
+.catalog-item-title {
+    color: #000000;
+
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.catalog-item-title:hover,
+.catalog-item-title:focus,
+.catalog-item-category:hover,
+.catalog-item-category:focus {
+    color: #663d15;
+}
+
+.pagination-list {
+    list-style: none;
+}
+
+.btn-current {
+    color: #000000;
+
+    background-color: #ffffff;
+
+    text-align: center;
+    vertical-align: middle;
 }
 
 /* Подвал */

@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Барбершоп Бородинский</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body style="background-color: darkseagreen">
+<body class="item-page">
 
    <!-- Шапка -->
 
    <header class="main-header">
-      <nav class="container">
+      <nav class="main-navigation">
          <img class="main-logo" src="img/logo.svg" width="111" height="24" alt="Логотип Барбершопа Бородинский">
          <ul class="nav-list">
              <li class="nav-item"><a href="#">Информация</a></li>
@@ -18,7 +21,7 @@
              <li class="nav-item"><a href="shop.html">Магазин</a></li>
              <li class="nav-item"><a href="#">Контакты</a></li>
          </ul>
-         <ul class="login">
+         <ul class="nav-login">
              <li class="login-item"><button class="login-button-header" type="button">Вход</button></li>
          </ul>
       </nav>
@@ -43,7 +46,7 @@
                <h2 class="visually-hidden">Фильтер товаров</h2>
                <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
                   <fieldset class="manufacturer-group">
-                      <legend class="filter-group-title">ПРОИЗВОДИТЕЛИ:</legend>
+                      <legend>ПРОИЗВОДИТЕЛИ:</legend>
                       <ul class="filter-list">
                           <li class="filter-item">
                               <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Baxter-of-California" id="Baxter-of-California-id" checked>
@@ -73,7 +76,7 @@
                   </fieldset>
 
                   <fieldset class="product-group">
-                      <legend class="product-group-title">ГРУППЫ ТОВАРОВ:</legend>
+                      <legend>ГРУППЫ ТОВАРОВ:</legend>
                       <ul class="filter-list">
                           <li class="filter-item">
                               <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="shaving" id="shaving-id">
@@ -89,7 +92,7 @@
                           </li>
                       </ul>
                   </fieldset>
-                  <button class="filter-button" type="button">ПОКАЗАТЬ</button>
+                  <button class="button" type="button">ПОКАЗАТЬ</button>
                </form>
            </section>
 
@@ -107,8 +110,8 @@
                            </p>
                        </a>
                        <p class="catalog-item-price-container">
-                           <b class="catalog-item-price">2 900 ₽</b>
-                           <a class="catalog-item-button" href="#">КУПИТЬ</a>
+                           <b class="item-price">2 900 ₽</b>
+                           <a class="button" href="#">КУПИТЬ</a>
                        </p>
                    </li>
                    <li class="catalog-item">
@@ -122,8 +125,8 @@
                            </p>
                        </a>
                        <p class="catalog-item-price-container">
-                           <b class="catalog-item-price">750 ₽</b>
-                           <a class="catalog-item-button" href="#">КУПИТЬ</a>
+                           <b class="item-price">750 ₽</b>
+                           <a class="button" href="#">КУПИТЬ</a>
                        </p>
                    </li>
                    <li class="catalog-item">
@@ -137,8 +140,8 @@
                            </p>
                        </a>
                        <p class="catalog-item-price-container">
-                           <b class="catalog-item-price">290 ₽</b>
-                           <a class="catalog-item-button" href="#">КУПИТЬ</a>
+                           <b class="item-price">290 ₽</b>
+                           <a class="button" href="#">КУПИТЬ</a>
                        </p>
                    </li>
                    <li class="catalog-item">
@@ -152,8 +155,8 @@
                            </p>
                        </a>
                        <p class="catalog-item-price-container">
-                           <b class="catalog-item-price">500 ₽</b>
-                           <a class="catalog-item-button" href="#">КУПИТЬ</a>
+                           <b class="item-price">500 ₽</b>
+                           <a class="button" href="#">КУПИТЬ</a>
                        </p>
                    </li>
                    <li class="catalog-item">
@@ -167,8 +170,8 @@
                            </p>
                        </a>
                        <p class="catalog-item-price-container">
-                           <b class="catalog-item-price">300 ₽</b>
-                           <a class="catalog-item-button" href="#">КУПИТЬ</a>
+                           <b class="item-price">300 ₽</b>
+                           <a class="button" href="#">КУПИТЬ</a>
                        </p>
                    </li>
                    <li class="catalog-item">
@@ -182,24 +185,24 @@
                            </p>
                        </a>
                        <p class="catalog-item-price-container">
-                           <b class="catalog-item-price">3 900 ₽</b>
-                           <a class="catalog-item-button" href="#">КУПИТЬ</a>
+                           <b class="item-price">3 900 ₽</b>
+                           <a class="button" href="#">КУПИТЬ</a>
                        </p>
                    </li>
                </ul>
 
                <ul class="pagination-list">
                    <li class="pagination-item">
-                       <a href="#">1</a>
+                       <a class="button" href="#">1</a>
                    </li>
                    <li class="pagination-item pagination-item-current">
-                       <a>2</a>
+                       <a class="btn-current">2</a>
                    </li>
                    <li class="pagination-item">
-                       <a href="#">3</a>
+                       <a class="button" href="#">3</a>
                    </li>
                    <li class="pagination-item">
-                       <a href="#">4</a>
+                       <a class="button" href="#">4</a>
                    </li>
                </ul>
            </section>

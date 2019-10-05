@@ -3,13 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Барбершоп Бородинский</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body style="background-color: darkseagreen">
+<body class="item-page">
 
    <!-- Шапка -->
 
    <header class="main-header">
-      <nav class="container">
+      <nav class="main-navigation">
          <img class="main-logo" src="img/logo.svg" width="111" height="24" alt="Логотип Барбершопа Бородинский">
          <ul class="nav-list">
              <li class="nav-item"><a href="#">Информация</a></li>
@@ -18,7 +21,7 @@
              <li class="nav-item"><a href="shop.html">Магазин</a></li>
              <li class="nav-item"><a href="#">Контакты</a></li>
          </ul>
-         <ul class="login">
+         <ul class="nav-login">
              <li class="login-item"><button class="login-button-header" type="button">Вход</button></li>
          </ul>
       </nav>
@@ -56,16 +59,16 @@
                <h2 class="services-price-title">ЦЕНЫ НА УСЛУГИ НАШИХ МАСТЕРОВ:</h2>
                <table class="services-price-table">
                   <tr class="price-row">
-                      <td class="price-cell">СТРИЖКА</td>
-                      <td class="price-cell">1500 ₽</td>
+                      <td class="cell-text">СТРИЖКА</td>
+                      <td class="cell-price">1500 ₽</td>
                   </tr>
                   <tr class="price-row">
-                      <td class="price-cell">СТРИЖКА БОРОДЫ</td>
-                      <td class="price-cell">500 ₽</td>
+                      <td class="cell-text">СТРИЖКА БОРОДЫ</td>
+                      <td class="cell-price">500 ₽</td>
                   </tr>
                   <tr class="price-row">
-                      <td class="price-cell">НАКРУТКА УСОВ</td>
-                      <td class="price-cell">350 ₽</td>
+                      <td class="cell-text">НАКРУТКА УСОВ</td>
+                      <td class="cell-price">350 ₽</td>
                   </tr>
                </table>
                <p class="services-price-info">
