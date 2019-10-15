@@ -12,19 +12,27 @@
    <!-- Шапка -->
 
    <header class="main-header">
-      <nav class="main-navigation">
-         <img class="main-logo" src="img/logo.svg" width="111" height="24" alt="Логотип Барбершопа Бородинский">
-         <ul class="nav-list">
-             <li class="nav-item"><a href="#">Информация</a></li>
-             <li class="nav-item"><a href="#">Новости</a></li>
-             <li class="nav-item"><a href="price.html">Прайс-лист</a></li>
-             <li class="nav-item"><a href="shop.html">Магазин</a></li>
-             <li class="nav-item"><a href="#">Контакты</a></li>
-         </ul>
-         <ul class="nav-login">
-             <li class="login-item"><button class="login-button-header" type="button">Вход</button></li>
-         </ul>
-      </nav>
+       <div class="container">
+           <nav class="main-navigation">
+              <ul class="nav-list">
+                  <li class="nav-item">
+                     <a class="logo-container" href="#">
+                        <img class="main-logo" src="img/logo.svg" width="111" height="24" alt="Логотип Барбершопа Бородинский">
+                     </a>
+                  </li>
+                  <li class="nav-item"><a href="#">Информация</a></li>
+                  <li class="nav-item"><a href="#">Новости</a></li>
+                  <li class="nav-item"><a href="price.html">Прайс-лист</a></li>
+                  <li class="nav-item"><a href="shop.html">Магазин</a></li>
+                  <li class="nav-item"><a href="#">Контакты</a></li>
+              </ul>
+              <ul class="nav-login">
+                  <li class="login-item">
+                      <button class="login-button-header" type="button">Вход</button>
+                  </li>
+              </ul>
+           </nav>
+       </div>
    </header>
 
    <!-- Контент -->
@@ -37,11 +45,11 @@
            </li>
            <li class="breadcrumbs-item breadcrumbs-current">ПРАЙС-ЛИСТ</li>
        </ul>
+       <h1 class="services-title">ИСТИННО МУЖСКАЯ КЛАССИКА</h1>
        <section class="services-container">
-           <h1 class="services-title">ИСТИННО МУЖСКАЯ КЛАССИКА</h1>
            <div class="about-us">
                <section class="what-we-use">
-                   <h2 class="what-we-use-title">МЫ ИСПОЛЬЗУЕМ ТОЛЬКО ЛУЧШИЕ СРЕДСТВА:</h2>
+                   <h2>МЫ ИСПОЛЬЗУЕМ ТОЛЬКО<br> ЛУЧШИЕ СРЕДСТВА:</h2>
                    <ul class="what-we-use-list">
                        <li class="what-we-use-item">Baxter of California</li>
                        <li class="what-we-use-item">Mr Natty</li>
@@ -50,13 +58,13 @@
                    </ul>
                </section>
                <section class="about-us-info">
-                   <h2 class="about-us-info-title">НЕСКОЛЬКО СЛОВ О НАС:</h2>
+                   <h2>НЕСКОЛЬКО СЛОВ О НАС:</h2>
                    <p class="about-us-info-text">Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.</p>
                </section>
            </div>
 
            <section class="services-price">
-               <h2 class="services-price-title">ЦЕНЫ НА УСЛУГИ НАШИХ МАСТЕРОВ:</h2>
+               <h2>ЦЕНЫ НА УСЛУГИ<br> НАШИХ МАСТЕРОВ:</h2>
                <table class="services-price-table">
                   <tr class="price-row">
                       <td class="cell-text">СТРИЖКА</td>
@@ -80,7 +88,7 @@
 
    <!-- Подвал -->
 
-   <footer class="main-footer">
+   <footer class="main-footer price-page">
        <div class="container">
            <div class="footer-copyright">
                <p class="copyright-info">

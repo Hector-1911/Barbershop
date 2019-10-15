@@ -40,6 +40,10 @@ a {
     text-decoration: none;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
 .container {
     width: 960px;
 
@@ -233,6 +237,8 @@ a {
 /* Товар */
 
 .page-title {
+    margin-bottom: 20px;
+
     font-size: 30px;
     line-height: 42px;
 }
@@ -261,6 +267,34 @@ a {
 
 .breadcrumbs-current {
     color: #aba9a7;
+}
+
+.services-title {
+    width: 940px;
+
+    margin: 0 auto;
+    margin-top: 50px;
+
+    text-align: center;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 65px;
+}
+
+.services-container h2 {
+    margin-bottom: 30px;
+}
+
+.about-us {
+    width: 400px;
+}
+
+.services-price {
+    width: 460px;
 }
 
 .product-container {
@@ -362,10 +396,23 @@ a {
 }
 
 .what-we-use-list {
+    margin: 0;
+    margin-bottom: 60px;
+    padding: 0;
+
     list-style: none;
 }
 
+.what-we-use-item {
+    margin-bottom: 10px;
+}
+
 .services-price-table {
+    width: 460px;
+    height: 125px;
+
+    margin-bottom: 120px;
+
     border-collapse: collapse;
 }
 
@@ -374,10 +421,18 @@ a {
 }
 
 .services-price-table .cell-text {
+    width: 50%;
+    height: 33.33%;
+
+    padding-left: 15px;
+
     text-align: left;
 }
 
 .services-price-table .cell-price {
+    width: 50%;
+    height: 33.33%;
+
     text-align: center;
 }
 
@@ -475,6 +530,10 @@ a {
 
 .item-page .main-footer {
     margin-top: 50px;
+}
+
+.item-page .main-footer.price-page {
+    margin-top: 75px;
 }
 
 .main-footer .container {
