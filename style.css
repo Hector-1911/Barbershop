@@ -1,3 +1,15 @@
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+.content-box-component {
+    box-sizing: content-box;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -26,6 +38,13 @@ body {
 
 a {
     text-decoration: none;
+}
+
+.container {
+    width: 960px;
+
+    padding: 0 10px;
+    margin: 0 auto;
 }
 
 .visually-hidden {
@@ -60,16 +79,36 @@ a {
 
 /* Шапка */
 
+.main-header {
+    width: 100%;
+
+    color: #ffffff;
+    background-color: #000000;
+
+    margin-bottom: 60px;
+}
+
 .main-navigation {
+    display: flex;
+    justify-content: space-between;
+
     font-size: 16px;
     line-height: 20px;
-    color: #ffffff;
+}
 
-    background-color: #000000;
+.nav-list {
+    width: 620px;
+}
+
+.nav-login {
+    width: 140px;
 }
 
 .nav-list,
 .nav-login {
+    margin: 0;
+    padding: 0;
+
     list-style: none;
 }
 
@@ -87,11 +126,31 @@ a {
 
 /* Преимущества */
 
+.main-logo {
+    width: 371px;
+    height: 155px;
+
+    margin: 0 auto;
+    margin-bottom: 75px;
+}
+
+.features {
+    margin-bottom: 80px;
+}
+
 .features-list {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 0;
+    padding: 0;
+
     list-style: none;
 }
 
 .features-item {
+    width: 300px;
+
     text-align: center;
 }
 
@@ -101,8 +160,13 @@ a {
 }
 
 .content-container {
-    color: #000000;
+    display: flex;
+    justify-content: space-between;
 
+    margin-bottom: 35px;
+    padding: 50px 80px;
+
+    color: #000000;
     background-color: #f8f5f2;
     background-image: url(img/background-fon-repeat.jpg);
     background-position: 0 0;
@@ -114,7 +178,20 @@ a {
     line-height: 42px;
 }
 
+.news,
+.contants{
+    width: 380px;
+}
+
+.gallery,
+.sign-up {
+    width: 300px;
+}
+
 .news-list {
+    margin: 0;
+    padding: 0;
+
     list-style: none;
 }
 
@@ -310,12 +387,28 @@ a {
 /* Подвал */
 
 .main-footer {
-    color: #ffffff;
+    margin-top: 65px;
+    padding: 60px 0;
 
+    color: #ffffff;
     background-color: #212121;
     background-image: url(img/background-footer-repeat.jpg);
     background-position: 0 0;
     background-repeat: repeat;
+}
+
+.main-footer .container {
+    display: flex;
+}
+
+.footer-copyright {
+    width: 320px;
+
+    margin-right: 80px;
+}
+
+.copyright-info {
+    margin: 0;
 }
 
 .copyright-info a {
@@ -329,10 +422,16 @@ a {
 }
 
 .footer-social {
+    width: 145px;
+
     text-align: center;
 }
 
 .footer-autors {
+    width: 150px;
+
+    margin-left: auto;
+
     text-align: center;
 }
 
@@ -346,12 +445,21 @@ a {
 /* Модальные окна */
 
 .modal {
-    color: #000000;
+    margin: 0 auto;
 
+    color: #000000;
     background-color: #f8f3f0;
     background-image: url(img/background-fon-repeat.jpg);
     background-position: 0 0;
     background-repeat: repeat;
+}
+
+.modal-login {
+    width: 460px;
+}
+
+.modal-map {
+    width: 780px;
 }
 
 .modal h2 {

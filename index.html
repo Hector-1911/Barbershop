@@ -12,39 +12,46 @@
    <!-- Шапка -->
 
    <header class="main-header">
-      <nav class="main-navigation">
-         <img class="main-logo" src="img/index-logo.svg" width="371" height="155" alt="Логотип Барбершопа Бородинский">
-         <ul class="nav-list">
-             <li class="nav-item"><a href="#">Информация</a></li>
-             <li class="nav-item"><a href="#">Новости</a></li>
-             <li class="nav-item"><a href="price.html">Прайс-лист</a></li>
-             <li class="nav-item"><a href="shop.html">Магазин</a></li>
-             <li class="nav-item"><a href="#">Контакты</a></li>
-         </ul>
-         <ul class="nav-login">
-             <li class="login-item"><button class="login-button-header" type="button">Вход</button></li>
-         </ul>
-      </nav>
+       <div class="container">
+           <nav class="main-navigation">
+              <ul class="nav-list">
+                  <li class="nav-item"><a href="#">Информация</a></li>
+                  <li class="nav-item"><a href="#">Новости</a></li>
+                  <li class="nav-item"><a href="price.html">Прайс-лист</a></li>
+                  <li class="nav-item"><a href="shop.html">Магазин</a></li>
+                  <li class="nav-item"><a href="#">Контакты</a></li>
+              </ul>
+              <ul class="nav-login">
+                  <li class="login-item"><button class="login-button-header"      type="button">Вход</button></li>
+              </ul>
+           </nav>
+       </div>
    </header>
 
    <!-- Преимущества -->
 
    <main class="container">
+       <div class="main-logo">
+           <a href="index.html">
+               <img class="main-logo-img" src="img/index-logo.svg" width="371" height="155" alt="Логотип Барбершопа Бородинский">
+           </a>
+       </div>
        <h1 class="visually-hidden">Барбершоп Бородинский</h1>
        <section class="features">
-          <h2 class="visually-hidden">Преимущества</h2>
+           <h2 class="visually-hidden">Преимущества</h2>
            <ul class="features-list">
                <li class="features-item">
                    <h3>Быстро</h3>
-                   <p>МЫ ДЕЛАЕМ СВОЮ РАБОТУ БЫСТРО! ДВА ЧАСА ПРОЛЕТЯТ НЕЗАМЕТНО И ВЫ — СЧАСТЛИВЫЙ ОБЛАДАТЕЛЬ СТИЛЬНОЙ СТРИЖКИ-МИНУТКИ!</p>
+                   <p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки!</p>
                </li>
                <li class="features-item">
                    <h3>Круто</h3>
-                   <p>ЗАБУДЬТЕ, КАК ВЫ СТРИГЛИСЬ РАНЬШЕ. МЫ СДЕЛАЕМ ИЗ ВАС ЗВЕЗДУ ФУТБОЛА ИЛИ КИНО! ВО ВСЯКОМ СЛУЧАЕ ВНЕШНЕ.</p>
+                   <p>Забудьте, как вы стриглись раньше.<br> Мы сделаем из вас звезду футбола или кино!<br> Во всяком случае внешне.</p>
                </li>
                <li class="features-item">
                    <h3>Дорого</h3>
-                   <p>НАШИ МАСТЕРА — ПРОФЕССИОНАЛЫ СВОЕГО ДЕЛА И НЕ МОГУТ СТОИТЬ ДЕШЕВО. К ТОМУ ЖЕ, РАЗВЕ ЦЕНА НЕ ДАЕТ ОПРЕДЕЛЕНЫЙ СТАТУС?</p>
+                   <p>Наши мастера — профессионалы своего дела и<br> не могут стоить дешево. К тому же, разве цена<br> не дает определенный
+                        статус?</p>
                </li>
            </ul>
        </section>
@@ -171,7 +178,7 @@
        <button class="button-close" aria-label="Закрыть Окно" type="button"></button>
    </section>
 
-   <section class="modal-map">
+   <section class="modal modal-map">
        <h2 class="visually-hidden">Как до нас добраться</h2>
        <img src="img/map.jpg" width="766" height="560" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
        <button class="button-close" aria-label="Закрыть Окно" type="button"></button>
