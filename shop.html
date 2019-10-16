@@ -12,19 +12,27 @@
    <!-- Шапка -->
 
    <header class="main-header">
-      <nav class="main-navigation">
-         <img class="main-logo" src="img/logo.svg" width="111" height="24" alt="Логотип Барбершопа Бородинский">
-         <ul class="nav-list">
-             <li class="nav-item"><a href="#">Информация</a></li>
-             <li class="nav-item"><a href="#">Новости</a></li>
-             <li class="nav-item"><a href="price.html">Прайс-лист</a></li>
-             <li class="nav-item"><a href="shop.html">Магазин</a></li>
-             <li class="nav-item"><a href="#">Контакты</a></li>
-         </ul>
-         <ul class="nav-login">
-             <li class="login-item"><button class="login-button-header" type="button">Вход</button></li>
-         </ul>
-      </nav>
+       <div class="container">
+           <nav class="main-navigation">
+              <ul class="nav-list">
+                  <li class="nav-item">
+                     <a class="logo-container" href="#">
+                        <img class="main-logo" src="img/logo.svg" width="111" height="24" alt="Логотип Барбершопа Бородинский">
+                     </a>
+                  </li>
+                  <li class="nav-item"><a href="#">Информация</a></li>
+                  <li class="nav-item"><a href="#">Новости</a></li>
+                  <li class="nav-item"><a href="price.html">Прайс-лист</a></li>
+                  <li class="nav-item"><a href="shop.html">Магазин</a></li>
+                  <li class="nav-item"><a href="#">Контакты</a></li>
+              </ul>
+              <ul class="nav-login">
+                  <li class="login-item">
+                      <button class="login-button-header" type="button">Вход</button>
+                  </li>
+              </ul>
+           </nav>
+       </div>
    </header>
 
    <!-- Контент -->
@@ -41,7 +49,7 @@
            <li class="breadcrumbs-item breadcrumbs-current">Средства для ухода</li>
        </ul>
 
-       <div class="content-container">
+       <div class="catalog-container">
            <section class="catalog-filter">
                <h2 class="visually-hidden">Фильтер товаров</h2>
                <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
@@ -80,7 +88,7 @@
                       <ul class="filter-list">
                           <li class="filter-item">
                               <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="shaving" id="shaving-id">
-                              <label for="shaving-id">Бритвенные принадлежности</label>
+                              <label for="shaving-id">Бритвенные<br> принадлежности</label>
                           </li>
                           <li class="filter-item">
                               <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="hair-care" id="hair-care-id" checked>
@@ -190,7 +198,6 @@
                        </p>
                    </li>
                </ul>
-
                <ul class="pagination-list">
                    <li class="pagination-item">
                        <a class="button" href="#">1</a>

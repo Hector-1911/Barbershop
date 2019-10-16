@@ -37,6 +37,8 @@ body {
 }
 
 a {
+    display: inline-block;
+
     text-decoration: none;
 }
 
@@ -438,13 +440,63 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Магазин */
 
+.catalog-container {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 50px;
+}
+
+.catalog-filter {
+    width: 220px;
+}
+
+.catalog {
+    width: 700px;
+}
+
+.catalog-container fieldset {
+    margin: 0;
+    padding: 0;
+}
+
+.catalog ul,
+.catalog-filter ul {
+    margin: 0;
+    padding: 0;
+}
+
 .filter-form fieldset {
     border: none;
 }
 
 .filter-form legend {
+    margin-bottom: 30px;
+
     font-size: 24px;
     line-height: 30px;
+}
+
+.catalog-container .filter-list {
+    margin-bottom: 50px;
+}
+
+.filter-list .filter-item {
+    margin-bottom: 25px;
+    margin-left: 40px;
+}
+
+.catalog-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.catalog-list .catalog-item {
+    width: 220px;
+    height: 290px;
+
+    margin-bottom: 20px;
 }
 
 .filter-list input:hover + label,
@@ -497,8 +549,16 @@ h1, h2, h3, h4, h5, h6 {
     color: #000000;
 }
 
-.pagination-list {
+.catalog .pagination-list {
     list-style: none;
+
+    margin-top: 20px;
+}
+
+.pagination-item {
+    display: inline-block;
+
+    margin-right: 7px;
 }
 
 .catalog-item-price-container .button {
