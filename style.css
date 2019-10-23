@@ -109,7 +109,7 @@ input[type="radio"].visually-hidden {
 }
 
 .item-page .main-header {
-    margin-bottom: 50px;
+    margin-bottom: 55px;
 }
 
 .item-page .main-logo {
@@ -148,6 +148,10 @@ input[type="radio"].visually-hidden {
     padding: 0;
 
     list-style: none;
+}
+
+.main-header .logo-container {
+    padding-bottom: 20px;
 }
 
 .nav-list a,
@@ -387,8 +391,20 @@ input[type="radio"].visually-hidden {
 
 .breadcrumbs-item {
     display: inline-block;
+    position: relative;
 
-    margin-right: 45px;
+    margin-right: 36px;
+}
+
+.breadcrumbs-item::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: #000000;
+    right: -24px;
+    top: 8px;
+    transform: rotate(45deg);
 }
 
 .breadcrumbs-item a {
@@ -402,6 +418,8 @@ input[type="radio"].visually-hidden {
 
 .breadcrumbs-current {
     color: #aba9a7;
+    display: inline-block;
+    margin-right: 40px;
 }
 
 .services-title {
@@ -417,7 +435,7 @@ input[type="radio"].visually-hidden {
     display: flex;
     justify-content: space-between;
 
-    margin-top: 65px;
+    margin-top: 60px;
 }
 
 .services-container h2 {
@@ -492,7 +510,8 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-item-price-container {
-    margin-bottom: 65px;
+    margin: 0;
+    margin-bottom: 60px;
 }
 
 .item-price {
@@ -502,6 +521,12 @@ input[type="radio"].visually-hidden {
 
     text-align: center;
     vertical-align: middle;
+    padding: 12px 36px;
+}
+
+.product-info-container .button {
+    padding: 11px 20px;
+    margin-left: -4px;
 }
 
 .product-equip h2 {
@@ -518,11 +543,47 @@ input[type="radio"].visually-hidden {
     list-style: none;
 }
 
+.product-equip-item {
+    margin-bottom: 4px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.product-equip-item::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: #000000;
+    left: 1px;
+    top: 8px;
+    transform: rotate(45deg);
+}
+
 /* Страница Цены */
 
 .services-title {
     font-size: 48px;
     line-height: 48px;
+    position: relative;
+}
+
+.services-title::after,
+.services-title::before {
+    content: "";
+    position: absolute;
+    width: 160px;
+    height: 2px;
+    background-color: #000000;
+    top: 24px;
+}
+
+.services-title::after {
+    right: 0;
+}
+
+.services-title::before {
+    left: 0;
 }
 
 .services-container h2 {
@@ -539,14 +600,35 @@ input[type="radio"].visually-hidden {
 }
 
 .what-we-use-item {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.what-we-use-item::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: #000000;
+    left: 1px;
+    top: 8px;
+    transform: rotate(45deg);
+}
+
+.what-we-use h2 {
+    margin-bottom: 32px;
+}
+
+.services-price h2 {
+    margin-bottom: 35px;
 }
 
 .services-price-table {
     width: 460px;
     height: 125px;
 
-    margin-bottom: 120px;
+    margin-bottom: 130px;
 
     border-collapse: collapse;
 }
@@ -599,6 +681,61 @@ input[type="radio"].visually-hidden {
     padding: 0;
 }
 
+.filter-form li:last-of-type {
+    margin-bottom: 0;
+}
+
+.filter-form input {
+    display: none;
+}
+
+.filter-form label {
+    padding-left: 40px;
+    display: block;
+    position: relative;
+}
+
+.catalog-filter .manufacturer-group {
+    margin-bottom: 50px;
+}
+
+.manufacturer-group label::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 0;
+    top: -1px;
+    border: 2px solid black;
+}
+
+.manufacturer-group input:checked + label::before {
+    background: url('img/cross.svg') no-repeat center center;
+}
+
+.manufacturer-group input:disabled + label::before {
+    opacity: 0.5;
+}
+
+.product-group label::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 0;
+    top: -1px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.product-group input:checked + label::before {
+    background: url('img/dot.svg') no-repeat center center;
+}
+
+.product-group input:disabled + label::before {
+    opacity: 0.5;
+}
+
 .filter-form fieldset {
     border: none;
 }
@@ -610,13 +747,16 @@ input[type="radio"].visually-hidden {
     line-height: 30px;
 }
 
-.catalog-container .filter-list {
+.filter-form .button {
+    padding: 10px 33px;
+}
+
+.catalog-container .product-group {
     margin-bottom: 50px;
 }
 
 .filter-list .filter-item {
-    margin-bottom: 25px;
-    margin-left: 40px;
+    margin-bottom: 20px;
 }
 
 .catalog-list {
@@ -627,9 +767,15 @@ input[type="radio"].visually-hidden {
 
 .catalog-list .catalog-item {
     width: 220px;
-    height: 290px;
-
+    height: 286px;
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #000000;
+
+    background-color: #f8f8f8;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .filter-list input:hover + label,
@@ -648,15 +794,45 @@ input[type="radio"].visually-hidden {
     line-height: 18px;
 }
 
+.catalog p {
+    margin: 0;
+}
+
 .catalog-list {
     list-style: none;
 }
 
-.catalog-item {
-    color: #000000;
+.catalog-list .catalog-item-price-container b,
+.catalog-list .catalog-item-price-container a {
+    padding: 0;
+}
 
-    background-color: #f8f8f8;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+.catalog-list .item-price {
+    width: 109px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.catalog-list .button {
+    width: 78px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.catalog-list .img-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.catalog-list .catalog-item-image {
+    order: -1;
+    margin-bottom: 10px;
+}
+
+.catalog-item span {
+    display: block;
 }
 
 .catalog-item:hover {
@@ -680,6 +856,8 @@ input[type="radio"].visually-hidden {
 
 .catalog-item h3 {
     color: #000000;
+    margin-left: 18px;
+    margin-bottom: 10px;
 }
 
 .catalog .pagination-list {
@@ -694,9 +872,20 @@ input[type="radio"].visually-hidden {
     margin-right: 7px;
 }
 
+.catalog-item-price-container {
+    width: 187px;
+    height: 43px;
+    display: flex;
+}
+
 .catalog-item-price-container .button {
   line-height: 20px;
   color: #ffffff;
+}
+
+.pagination-list .button,
+.pagination-list .btn-current{
+    padding: 12px 19px;
 }
 
 .btn-current {
