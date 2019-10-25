@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <title>Барбершоп Бородинский</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap&subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="item-page">
 
@@ -20,11 +20,11 @@
                         <img class="main-logo" src="img/logo.svg" width="111" height="24" alt="Логотип Барбершопа Бородинский">
                      </a>
                   </li>
-                  <li class="nav-item"><a href="#">Информация</a></li>
-                  <li class="nav-item"><a href="#">Новости</a></li>
-                  <li class="nav-item"><a href="price.html">Прайс-лист</a></li>
-                  <li class="nav-item"><a href="shop.html">Магазин</a></li>
-                  <li class="nav-item"><a href="#">Контакты</a></li>
+                  <li><a href="#">Информация</a></li>
+                  <li><a href="#">Новости</a></li>
+                  <li><a href="price.html">Прайс-лист</a></li>
+                  <li class="site-navigation-current"><a href="shop.html">Магазин</a></li>
+                  <li><a href="#">Контакты</a></li>
               </ul>
               <ul class="nav-login">
                   <li class="login-item">
@@ -44,7 +44,7 @@
                <a href="index.html">ГЛАВНАЯ</a>
            </li>
            <li class="breadcrumbs-item">
-               <a href="shop.html">МАГАЗИН</a>
+               <a href="#">МАГАЗИН</a>
            </li>
            <li class="breadcrumbs-current">Средства для ухода</li>
        </ul>
@@ -254,28 +254,32 @@
 
    <!-- Модальные окна -->
 
+
+<!--
    <section class="modal modal-login">
        <h2 class="heading-content">ЛИЧНЫЙ КАБИНЕТ</h2>
        <p class="modal-info">Введите пожалуйста свой логин и пароль</p>
        <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
           <p class="login-form-item">
              <label aria-label="Логин">
-                 <input class="form-item-icon" type="text" name="login" placeholder="ЛОГИН">
+                 <input class="form-icon-user" type="text" name="login" placeholder="ЛОГИН">
              </label>
           </p>
           <p class="login-form-item">
              <label aria-label="ПАРОЛЬ">
-                 <input class="form-item-icon" type="password" name="password" placeholder="ПАРОЛЬ">
+                 <input class="form-icon-password" type="password" name="password" placeholder="ПАРОЛЬ">
              </label>
           </p>
-          <p class="login-form-item">
+          <p class="login-helper">
              <input class="visually-hidden" type="checkbox" name="save-user" id="login-save-user">
-             <label class="save-user-icon" for="login-save-user">ЗАПОМНИТЕ МЕНЯ</label>
+             <label class="login-checkbox" for="login-save-user">ЗАПОМНИТЕ МЕНЯ</label>
              <a class="login-restore-pass" href="#">Я ЗАБЫЛ ПАРОЛЬ!</a>
           </p>
-          <button class="form-login-button" type="submit">ВОЙТИ</button>
+          <button class="button" type="submit">ВОЙТИ</button>
        </form>
        <button class="button-close" aria-label="Закрыть Окно" type="button"></button>
    </section>
+   <div class="modal-overlay"></div>
+-->
 </body>
 </html>

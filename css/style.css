@@ -21,7 +21,7 @@ body {
     text-transform: uppercase;
     color: #ffffff;
 
-    background-image: url(img/background-main.jpg);
+    background-image: url(../img/background-main.jpg);
     background-color: #000000;
     background-position: top center;
     background-repeat: no-repeat;
@@ -31,7 +31,7 @@ body {
     color: #000000;
 
     background-color: #f3f0ed;
-    background-image: url(img/background-fon-repeat.jpg);
+    background-image: url(../img/background-fon-repeat.jpg);
     background-position: top center;
     background-repeat: repeat;
 }
@@ -110,6 +110,20 @@ input[type="radio"].visually-hidden {
     margin-bottom: 60px;
 }
 
+.site-navigation-current {
+    position: relative;
+}
+
+.site-navigation-current::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    right: 20px;
+    height: 4px;
+    background-color: #ffffff;
+}
+
 .item-page .main-header {
     margin-bottom: 55px;
 }
@@ -173,7 +187,7 @@ input[type="radio"].visually-hidden {
     content: "";
     width: 16px;
     height: 16px;
-    background: url('img/login.svg') no-repeat 0 0;
+    background: url('../img/login.svg') no-repeat 0 0;
     position: absolute;
     left: 20px;
     top: 28px;
@@ -257,8 +271,8 @@ input[type="radio"].visually-hidden {
     color: #000000;
     background-color: #f8f5f2;
     background-image:
-        url('img/decor-line.png'),
-        url('img/background-fon-repeat.jpg');
+        url('../img/decor-line.png'),
+        url('../img/background-fon-repeat.jpg');
     background-position: center, 0 0;
     background-repeat: no-repeat, repeat;
 }
@@ -380,6 +394,7 @@ input[type="radio"].visually-hidden {
 }
 
 /* Товар */
+
 
 .page-title {
     margin-bottom: 20px;
@@ -689,6 +704,7 @@ input[type="radio"].visually-hidden {
     padding-left: 40px;
     display: block;
     position: relative;
+    cursor: pointer;
 }
 
 .catalog-filter .manufacturer-group {
@@ -706,7 +722,7 @@ input[type="radio"].visually-hidden {
 }
 
 .manufacturer-group input:checked + label::before {
-    background: url('img/cross.svg') no-repeat center center;
+    background: url('../img/cross.svg') no-repeat center center;
 }
 
 .manufacturer-group input:disabled + label::before {
@@ -725,7 +741,7 @@ input[type="radio"].visually-hidden {
 }
 
 .product-group input:checked + label::before {
-    background: url('img/dot.svg') no-repeat center center;
+    background: url('../img/dot.svg') no-repeat center center;
 }
 
 .product-group input:disabled + label::before {
@@ -915,13 +931,25 @@ input[type="radio"].visually-hidden {
 
     color: #ffffff;
     background-color: #212121;
-    background-image: url(img/background-footer-repeat.jpg);
+    background-image: url(../img/background-footer-repeat.jpg);
     background-position: 0 0;
     background-repeat: repeat;
 }
 
 .item-page .main-footer {
     margin-top: 50px;
+    position: relative;
+}
+
+.item-page .main-footer::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0px 0px 22px 7px rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .item-page .main-footer.price-page {
@@ -1015,7 +1043,7 @@ input[type="radio"].visually-hidden {
 
     color: #000000;
     background-color: #f8f3f0;
-    background-image: url(img/background-fon-repeat.jpg);
+    background-image: url(../img/background-fon-repeat.jpg);
     background-position: 0 0;
     background-repeat: repeat;
     box-shadow: 0px 30px 35px rgba(0, 0, 0, 0.7);
@@ -1028,7 +1056,7 @@ input[type="radio"].visually-hidden {
     height: 21px;
     top: 6px;
     right: -32px;
-    background: url("img/cross-white.svg") no-repeat 0 0;
+    background: url("../img/cross-white.svg") no-repeat 0 0;
 
     border: 0;
     font-size: 0;
@@ -1081,11 +1109,11 @@ input[type="radio"].visually-hidden {
 }
 
 .modal .form-icon-user {
-    background: url("img/user.svg") no-repeat 270px center;
+    background: url("../img/user.svg") no-repeat 270px center;
 }
 
 .modal .form-icon-password {
-    background: url("img/lock.svg") no-repeat 270px center;
+    background: url("../img/lock.svg") no-repeat 270px center;
 }
 
 .modal .login-form-item {
@@ -1121,7 +1149,7 @@ input[type="radio"].visually-hidden {
 }
 
 .login-helper input:checked + label::before {
-    background: url('img/cross.svg') no-repeat center center;
+    background: url('../img/cross.svg') no-repeat center center;
 }
 
 .login-form-item input:focus {
