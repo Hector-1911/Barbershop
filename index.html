@@ -171,7 +171,6 @@
 
    <!-- Модальные окна -->
 
-<!--
    <section class="modal modal-login">
        <h2 class="heading-content">ЛИЧНЫЙ КАБИНЕТ</h2>
        <p class="modal-info">Введите пожалуйста свой логин и пароль</p>
@@ -202,6 +201,28 @@
        <button class="button-close" aria-label="Закрыть Окно" type="button"></button>
    </section>
    <div class="modal-overlay"></div>
--->
+   <script>
+
+       var link = document.querySelector(".login-button-header");
+       var popup = document.querySelector(".modal-login");
+       var close = document.querySelector(".button-close");
+       var overlay = document.querySelector(".modal-overlay");
+
+
+       link.addEventListener("click", function(evt) {
+          evt.preventDefault ();
+          popup.classList.add("modal-show");
+          overlay.classList.add("modal-show");
+       });
+
+       close.addEventListener("click", function(evt) {
+          evt.preventDefault ();
+          popup.classList.remove("modal-show");
+          overlay.classList.remove("modal-show");
+       });
+
+
+
+   </script>
 </body>
 </html>
