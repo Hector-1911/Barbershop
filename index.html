@@ -103,7 +103,7 @@
                ПН—ПТ: С 10:00 ДО 22:00<br>
                СБ—ВС: С 10:00 ДО 19:00
                </p>
-               <a class="button" href="#">КАК ПРОЕХАТЬ</a>
+               <a class="button js-button-map" href="#">КАК ПРОЕХАТЬ</a>
                <a class="button" href="#">ОБРАТНАЯ СВЯЗЬ</a>
            </section>
 
@@ -186,7 +186,7 @@
              </label>
           </p>
           <p class="login-helper">
-             <input class="visually-hidden" type="checkbox" name="save-user" id="login-save-user">
+             <input class="password-js visually-hidden" type="checkbox" name="save-user" id="login-save-user">
              <label class="login-checkbox" for="login-save-user">ЗАПОМНИТЕ МЕНЯ</label>
              <a class="login-restore-pass" href="#">Я ЗАБЫЛ ПАРОЛЬ!</a>
           </p>
@@ -197,27 +197,90 @@
 
    <section class="modal modal-map">
        <h2 class="visually-hidden">Как до нас добраться</h2>
-       <img src="img/map.jpg" width="766" height="560" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d706.6120373783332!2d30.32259633564148!3d59.93876848322809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1575471936799!5m2!1sru!2sru" width="766" height="560" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+       <img class="visually-hidden" src="img/map.jpg" width="766" height="560" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
        <button class="button-close" aria-label="Закрыть Окно" type="button"></button>
    </section>
+
    <div class="modal-overlay"></div>
+
    <script>
 
        var link = document.querySelector(".login-button-header");
        var popup = document.querySelector(".modal-login");
        var close = document.querySelector(".button-close");
        var overlay = document.querySelector(".modal-overlay");
+       var login = popup.querySelector(".form-icon-user");
+       var password = popup.querySelector(".password-js");
+       var form = popup.querySelector("form");
+       var isStorageSupport = true;
+       var storage = "";
 
+
+       try {
+          storage = localStorage.getItem("login");
+       } catch (err) {
+          isStorageSupport = false;
+       }
 
        link.addEventListener("click", function(evt) {
           evt.preventDefault ();
           popup.classList.add("modal-show");
           overlay.classList.add("modal-show");
+          if (storage) {
+              login.value = storage;
+              password.focus();
+          } else {
+              login.focus();
+          }
        });
 
        close.addEventListener("click", function(evt) {
           evt.preventDefault ();
           popup.classList.remove("modal-show");
+          overlay.classList.remove("modal-show");
+       });
+
+       overlay.addEventListener("click", function(evt) {
+          evt.preventDefault ();
+          popup.classList.remove("modal-show");
+          overlay.classList.remove("modal-show");
+       });
+
+       form.addEventListener("submit", function(evt) {
+         if (!login.value || !password.value) {
+             evt.preventDefault ();
+             console.log("Нужно ввести логин и пароль");
+         }else {
+             if (isStorageSupport) {
+                 localStorage.setItem("login", login.value);
+             }
+         }
+       });
+
+
+
+       var mapLink = document.querySelector(".js-button-map");
+       var mapPopup = document.querySelector(".modal-map");
+       var mapClose = mapPopup.querySelector(".button-close");
+       var overlay = document.querySelector(".modal-overlay");
+
+
+       mapLink.addEventListener("click", function(evt) {
+          evt.preventDefault ();
+          mapPopup.classList.add("modal-show");
+          overlay.classList.add("modal-show");
+       });
+
+       mapClose.addEventListener("click", function(evt) {
+          evt.preventDefault ();
+          mapPopup.classList.remove("modal-show");
+          overlay.classList.remove("modal-show");
+       });
+
+       overlay.addEventListener("click", function(evt) {
+          evt.preventDefault ();
+          mapPopup.classList.remove("modal-show");
           overlay.classList.remove("modal-show");
        });
 
